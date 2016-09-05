@@ -1,0 +1,155 @@
+#mainbox
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    background: url("../img/back_unique.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.obj
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    flex: 1;
+    margin: 10px;
+}
+
+.fruits
+{
+    display: flex;
+    width: 200px;
+    color: bisque;
+}
+
+.stats
+{
+    display: flex;
+    width: 70px;
+    justify-content: flex-start;
+    color: bisque;
+}
+
+.bars
+{
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+#b_bannane
+{
+    background: yellow;
+    width: 33%;
+}
+
+#b_peche
+{
+    background: plum;
+    width: 50%;
+}
+
+#b_abricot
+{
+    background: orange;
+    width: 10%;
+}
+
+
+#b_poire
+{
+    background: green;
+    width: 40%;
+}
+
+
+/* Case smalle screen, very small */
+@media (max-width: 400px) {
+    #mainbox
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-direction: row;
+        background: url("../img/back_unique.jpg") no-repeat center;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .obj
+    {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 25px;
+        height: 400px;
+        flex: 1;
+        margin: 0px;
+        font-size: 7px;
+    }
+
+    .fruits
+    {
+        display: flex;
+        width: 25px;
+        color: bisque;
+    }
+
+    .stats
+    {
+        display: flex;
+        width: 25px;
+        color: bisque;
+    }
+
+    .bars
+    {
+        display: flex;
+        flex: 1;
+        height: 100%;
+    }
+
+
+    /*
+    ** Set width to 25 px because the percent in the normal case mess up them
+    */
+    #b_bannane
+    {
+        background: yellow;
+        height: 33%;
+        width: 25px;
+    }
+
+    #b_peche
+    {
+        background: plum;
+        height: 50%;
+        width: 25px;
+    }
+
+    #b_abricot
+    {
+        background: orange;
+        height: 10%;
+        width: 25px;
+    }
+
+
+    #b_poire
+    {
+        background: green;
+        height: 40%;
+        width: 25px;
+    }
+}
+
+#fb_link
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
